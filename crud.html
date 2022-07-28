@@ -1,0 +1,102 @@
+<!-- HTML5 -->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .textField{
+            width : 100%;
+            height : 30%;
+        }
+        dialog{
+            width : 50%;
+            height : 10%;
+        }   
+    </style>
+</head>
+<body>    
+    <header>
+        <nav id = "menu">
+            <table style="width:100%">
+                <colgroup>
+                    <col style="width:25%">
+                    <col style="width:25%">
+                    <col style="width:25%">
+                    <col style="width:25%">        
+                </colgroup>
+                <tr>
+                    <td><a href="index.html">Part1 Simple Dialogs</td>
+                    <td><a href="nativedialogs.html">Part2 Custom Dialogs</a></td>
+                    <td><a href="crud.html">Part3 CRUD</a></td>
+                    <td><a href="styledcrud.html">Part4 styledCRUD</a></td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="ani">CRUD</h2>
+        <section>
+            <h3>Posting</h3>
+                <dialog id="deleteDialog">
+                    <p class = "content">Delete Post?</p>
+                    <div align="right">
+                        <button id="noDeleteConfirm">Cancel</button>
+                        <button id="deleteConfirm">Ok</button>
+                    </div>
+                </dialog>
+                
+                <dialog id="editDialog">
+                    <label>Title:
+                        <input type="text" id = "changedTitle"></input>
+                    </label>
+                    <br>
+                    <label>Date:
+                        <input type="date" value="2022-07-26" id = "changedDate"></input>
+                    </label>
+                    <br>
+                    <label>Summary:
+                        <input type="text" id = "changedSummary" class = "textField">
+                    </label>
+                    <div align="right">
+                        <button id="editCancelBtn">Cancel</button>
+                        <button id="editBtn">Save</button>
+                    </div>
+                </dialog>
+                <dialog id="originalDialog">
+                    <label>Title:
+                        <input type="text" id = "title"></input>
+                    </label>
+                    <br>
+                    <label>Date:
+                        <input type="date" value="2022-07-26" id = "date"></input>
+                    </label>
+                    <br>
+                    <label>Summary:
+                        <input type="text" id = "summary" class = "textField"></select>
+                    </label>
+                    <div align="right">
+                        <button id="cancelBtn">Cancel</button>
+                        <button id="addBtn">Save</button>
+                    </div>
+                </dialog>
+                <ul id = "postingList">
+                </ul>
+            
+            <button id="addButton">Add posting</button>
+            
+            <script src="js/blog.js"></script>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <p id="ftrcontent">Content of this site is under copyright</p>
+    </footer>
+
+</body>
+
+
+</html>

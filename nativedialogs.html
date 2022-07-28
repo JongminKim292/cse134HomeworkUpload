@@ -1,0 +1,76 @@
+<!-- HTML5 -->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <title>HW4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>    
+    <header>
+        <nav id = "menu">
+            <table style="width:100%">
+                <colgroup>
+                    <col style="width:25%">
+                    <col style="width:25%">
+                    <col style="width:25%">
+                    <col style="width:25%">        
+                </colgroup>
+                <tr>
+                    <td><a href="index.html">Part1 Simple Dialogs</td>
+                    <td><a href="nativedialogs.html">Part2 Custom Dialogs</a></td>
+                    <td><a href="crud.html">Part3 CRUD</a></td>
+                    <td><a href="styledcrud.html">Part4 styledCRUD</a></td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="ani">HW4</h2>
+        <section>
+            <h3>Part2 custom dialogs</h3>
+            <input type="button" value="Alert button" id="customAlert">
+            <input type="button" value="Confirm button" id="customConfirm">
+            <input type="button" value="Prompt button" id="customPrompt">
+            
+            <dialog id="alertDialog">
+                <p class = "content">Alert button pressed</p>
+                  <div align="center">
+                    <button id="alertClose">Ok</button>
+                  </div>
+                </form>
+            </dialog>
+
+            <dialog id="confirmDialog">
+                <p class = "content">True? or False?</p>
+                <div align="right">
+                    <button id="falseConfirm">Cancel</button>
+                    <button id="trueConfirm">Ok</button>
+                </div>
+            </dialog>
+
+            <dialog id="promptDialog">
+                <p class = "content">Type your prompt</p>
+                <input type="text" id="inputPrompt">
+                <div align="right">
+                    <button id="promptClose">Cancel</button>
+                    <button id="promptEnter">Enter</button>
+                </div>
+            </dialog>
+
+            <div id="customContentBlock"></div>
+            
+            <script src="js/customdialog.js"></script>
+        </section>
+    </main>
+    
+    <hr>
+    <footer>
+        <p id="ftrcontent">Content of this site is under copyright by Jongmin</p>
+    </footer>
+
+</body>
+
+
+</html>
